@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore WM PHARMA skincare and personal-care products. Contact us for confirmed product information and orders.">
+<meta name="theme-color" content="#f7f3ec">
+<title>WM PHARMA | Skincare & Personal Care</title>
+<style>
+:root{--ink:#27332f;--muted:#69736d;--sage:#7d8b78;--sand:#e9e0d2;--cream:#f7f3ec;--white:#fff;--line:#e8e2d9;--accent:#aa906a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}.announcement{background:#ece5d9;color:#4e5b50;text-align:center;padding:9px 14px;font-size:11px;letter-spacing:.12em}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:1160px;margin:auto;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:Georgia,'Times New Roman',serif;color:var(--ink);font-size:22px;letter-spacing:.12em;font-weight:bold}.brand small{display:block;font:9px Arial,sans-serif;letter-spacing:.22em;color:var(--sage);margin-top:3px}
+.navlinks{display:flex;gap:25px;font-size:13px}.navlinks a:hover{color:var(--sage)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:white;padding:13px 20px;border:1px solid var(--ink);font-size:11px;font-weight:bold;letter-spacing:.08em;cursor:pointer;transition:.2s}.btn:hover{background:#435349}.btn-outline{background:transparent;color:var(--ink)}.btn-outline:hover{color:white}
+.hero{background:var(--cream);overflow:hidden}.hero-inner{max-width:1160px;margin:auto;padding:76px 24px 78px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:45px}
+.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);font-weight:bold}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:normal;color:var(--ink);line-height:1.14}
+h1{font-size:clamp(42px,5vw,66px);margin:16px 0 18px;max-width:600px;letter-spacing:-.025em}h2{font-size:clamp(30px,3.5vw,43px);margin:10px 0 15px;letter-spacing:-.02em}h3{font-size:22px;margin:12px 0 8px}
+.photoshoot-art{min-height:0;border-radius:18px;overflow:hidden;background:#f7f3ec;box-shadow:0 18px 40px #27332f12}.photoshoot-art img{display:block;width:100%;height:auto;object-fit:contain;border-radius:18px}.hero p{max-width:490px;color:#647069;font-size:15px;margin:0 0 27px}.hero-art{min-height:350px;display:flex;align-items:center;justify-content:center;position:relative}
+.art-circle{width:min(360px,85%);aspect-ratio:1;border-radius:50%;background:#e9e1d4;display:flex;align-items:center;justify-content:center;position:relative}
+.art-circle:before{content:"";position:absolute;width:76%;height:76%;border:1px solid #c7b99f;border-radius:50%}
+.bottle{position:relative;width:110px;height:205px;background:linear-gradient(90deg,#eee8dc,#fff,#e7e0d3);border:1px solid #d8d0c2;border-radius:8px 8px 18px 18px;box-shadow:18px 22px 28px #182c3510;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px}
+.bottle:before{content:"";position:absolute;width:43px;height:30px;top:-28px;background:#7d8b78;border-radius:4px 4px 0 0}
+.bottle .bbrand{font:10px Georgia,serif;letter-spacing:2px;color:var(--ink);border-bottom:1px solid var(--accent);padding-bottom:8px;margin-bottom:9px}
+.bottle .bname{font:12px Georgia,serif;color:var(--ink)}.bottle .bsub{font-size:7px;letter-spacing:1px;color:#7a756b;margin-top:7px}
+.bottle.two{transform:translate(22px,30px) rotate(7deg);height:170px;width:94px;background:linear-gradient(90deg,#e8ddc9,#fff,#e4d8c5)}
+.bottle.two:before{height:22px;top:-20px;width:36px;background:#b9a789}
+.section{max-width:1160px;margin:auto;padding:76px 24px}.section-head{text-align:center;max-width:640px;margin:0 auto 34px}.section-head p{color:var(--muted);margin:0}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.product{border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;min-width:0}
+.product-image{height:220px;background:linear-gradient(145deg,#faf8f3,#f0ece4);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;display:block}.product-image:after{pointer-events:none}
+.product-image:after{content:"";position:absolute;width:160px;height:160px;border:1px solid #d7cbb7;border-radius:50%}
+.pack{z-index:1;position:relative;width:88px;height:145px;background:linear-gradient(90deg,#eee8dc,#fff,#e4ddcf);border:1px solid #d4cbbb;border-radius:5px 5px 14px 14px;box-shadow:12px 13px 20px #1a2e380e;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:9px}
+.pack:before{content:"";position:absolute;top:-17px;width:38px;height:18px;background:#7d8b78;border-radius:3px 3px 0 0}
+.pack.sand:before{background:#b9a789}.pack.slim{width:65px;height:150px;border-radius:10px 10px 7px 7px}.pack.jar{height:92px;width:105px;border-radius:10px 10px 18px 18px}.pack.jar:before{top:-13px;width:108px;height:14px;background:#b9a789}
+.pack-name{font:10px Georgia,serif;letter-spacing:1px;color:var(--ink);border-bottom:1px solid var(--accent);padding-bottom:6px;margin-bottom:7px}.pack-type{font-size:8px;color:#666;line-height:1.25}.pack-size{font-size:7px;color:#777;margin-top:8px;letter-spacing:1px}
+.product-info{padding:20px;display:flex;flex-direction:column;flex:1}.category{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-weight:bold}.product-info h3{font-size:21px;margin:8px 0}.product-info p{font-size:13px;color:var(--muted);margin:0 0 16px;flex:1}.price-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}.price{font-weight:bold;color:var(--ink);font-size:16px}.order{font-size:10px;padding:10px 12px}
+.note{font-size:12px;color:#746b5d;background:#f8f5ef;border-left:3px solid #b9a789;padding:12px 14px;margin-top:24px}
+.about{background:#f1ece3;color:var(--ink)}.about-inner{max-width:1000px;margin:auto;padding:65px 24px;text-align:center}.about h2{color:var(--ink)}.about p{max-width:720px;margin:0 auto;color:#606c64}.about .eyebrow{color:var(--sage)}
+.promise-grid{max-width:1160px;margin:auto;padding:52px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:center}.promise{padding:15px}.promise-icon{width:42px;height:42px;border:1px solid #b9a789;border-radius:50%;display:grid;place-items:center;margin:0 auto 14px;color:var(--sage);font-size:18px}.promise h3{font-size:18px;margin:0 0 8px}.promise p{font-size:12px;color:var(--muted);margin:0}
+.contact{background:var(--cream);text-align:center}.contact p{color:var(--muted);max-width:550px;margin:0 auto 24px}
+footer{background:#27332f;color:#e5e8e2;padding:32px 24px}.footer-inner{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}.footer-brand{font:17px Georgia,serif;letter-spacing:.12em;color:#fff}.footer-note{font-size:11px;color:#c1c9c0;max-width:510px}.copyright{font-size:11px;color:#aeb8ad}
+.whatsapp{position:fixed;bottom:20px;right:20px;z-index:20;background:#326b50;color:white;border-radius:30px;padding:13px 17px;font-size:12px;font-weight:bold;box-shadow:0 5px 18px #0002}
+@media(max-width:760px){.nav{padding:14px 18px}.navlinks{gap:12px;font-size:11px}.navlinks .optional{display:none}.nav .btn{padding:10px 12px}.hero-inner{grid-template-columns:1fr;padding:54px 22px 35px;gap:10px}.hero-art{min-height:0}.photoshoot-art{max-width:440px;margin:0 auto}.art-circle{width:260px}.section{padding:58px 18px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-image{height:170px}.product-info{padding:13px}.product-info h3{font-size:17px}.product-info p{font-size:12px}.price-row{align-items:flex-start;flex-direction:column}.order{width:100%}.promise-grid{grid-template-columns:1fr;padding:30px 22px;gap:8px}.promise{padding:10px}.whatsapp{bottom:12px;right:12px}.footer-inner{align-items:flex-start;flex-direction:column}}
+@media(max-width:390px){.products{grid-template-columns:1fr}.product-image{height:205px}.price-row{flex-direction:row;align-items:center}}
+</style>
+</head>
+<body>
+<div class="announcement">SKINCARE & PERSONAL CARE · CUSTOMER SUPPORT</div>
+<header>
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#home">WM PHARMA<small>SKINCARE & PERSONAL CARE</small></a>
+    <div class="navlinks"><a href="#home">Home</a><a href="#products">Products</a><a class="optional" href="#about">Our Story</a><a href="#contact">Contact</a></div>
+    <a class="btn btn-outline" href="#products">EXPLORE</a>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Thoughtful care. Everyday confidence.</div>
+      <h1>Care for your<br>everyday routine.</h1>
+      <p>Explore the WM PHARMA skincare and personal-care collection. Find product information and contact our team with questions about availability and orders.</p>
+      <a class="btn" href="#products">EXPLORE OUR PRODUCTS&nbsp; ↗</a>
+    </div>
+    <div class="hero-art photoshoot-art" aria-label="WM PHARMA product photoshoot featuring the product collection">
+      <img src="images/wm-pharma-photoshoot-collage.png" alt="WM PHARMA skincare and hair-care product photoshoot collage" loading="eager">
+    </div>
+  </div>
+</section>
+<section class="section" id="products">
+  <div class="section-head"><div class="eyebrow">The collection</div><h2>Explore our products</h2><p>Browse the products listed below. Please contact us to confirm availability and current pricing.</p></div>
+  <div class="products">
+    <article class="product">
+      <div class="product-image"><img src="images/stella.jpg" alt="STELLA Brightening Cream product photograph" loading="lazy"></div>
+      <div class="product-info"><span class="category">Skincare</span><h3>STELLA Brightening Cream</h3><p>A skincare formulation designed to improve the appearance of dull skin and promote a brighter-looking complexion. Confirm ingredients and directions from the product label.</p><div class="price-row"><span class="price">PKR 2,000*</span><a class="btn order" href="#contact" data-product="STELLA Brightening Cream">ENQUIRE TO ORDER</a></div></div>
+    </article>
+    <article class="product">
+      <div class="product-image"><img src="images/solvex.jpg" alt="SOLVEX Sunblock SPF 60 product photograph" loading="lazy"></div>
+      <div class="product-info"><span class="category">Sun care</span><h3>SOLVEX Sunblock SPF 60</h3><p>A daily sun-care product labelled SPF 60. Follow the directions on the original packaging and confirm suitability for your skin type.</p><div class="price-row"><span class="price">Price to confirm</span><a class="btn order" href="#contact" data-product="SOLVEX Sunblock SPF 60">ENQUIRE TO ORDER</a></div></div>
+    </article>
+    <article class="product">
+      <div class="product-image"><img src="images/acnexa.jpg" alt="ACNEXA Acne Control Facewash product photograph" loading="lazy"></div>
+      <div class="product-info"><span class="category">Face care</span><h3>ACNEXA Acne Control Facewash</h3><p>A face cleanser formulated with salicylic acid, as stated on the packaging. Check the ingredient list and directions before use.</p><div class="price-row"><span class="price">Price to confirm</span><a class="btn order" href="#contact" data-product="ACNEXA Acne Control Facewash">ENQUIRE TO ORDER</a></div></div>
+    </article>
+    <article class="product">
+      <div class="product-image"><img src="images/capivex.jpg" alt="CAPIVEX Medicated Hair Revive Oil product photograph" loading="lazy"></div>
+      <div class="product-info"><span class="category">Hair care</span><h3>CAPIVEX Hair Revive Oil</h3><p>A hair-care oil presented for hair and scalp care. Review the original label for ingredients and directions before use.</p><div class="price-row"><span class="price">Price to confirm</span><a class="btn order" href="#contact" data-product="CAPIVEX Hair Revive Oil">ENQUIRE TO ORDER</a></div></div>
+    </article>
+    <article class="product">
+      <div class="product-image"><img src="images/colix.jpg" alt="COLIX Anti Hairfall Shampoo product photograph" loading="lazy"></div>
+      <div class="product-info"><span class="category">Hair care</span><h3>COLIX Shampoo</h3><p>A shampoo marketed for hair and scalp care. Refer to the product label for ingredients and directions.</p><div class="price-row"><span class="price">Price to confirm</span><a class="btn order" href="#contact" data-product="COLIX Shampoo">ENQUIRE TO ORDER</a></div></div>
+    </article>
+    <article class="product">
+      <div class="product-image"><img src="images/effacil.jpg" alt="EFFACIL Whitening Essence Facewash product photograph" loading="lazy"></div>
+      <div class="product-info"><span class="category">Face care</span><h3>EFFACIL Whitening Essence Facewash</h3><p>A face cleanser from the WM PHARMA skincare range. Check the original packaging for ingredients, directions and suitability before use.</p><div class="price-row"><span class="price">Price to confirm</span><a class="btn order" href="#contact" data-product="EFFACIL Whitening Essence Facewash">ENQUIRE TO ORDER</a></div></div>
+    </article>
+  </div>
+  <div class="note"><strong>Product details to confirm:</strong> Product images are enhanced promotional edits. Please compare packaging text, sizes and claims with the original packs before publishing. Confirm prices and product information against your current company details.</div>
+</section>
+<section class="about" id="about"><div class="about-inner"><div class="eyebrow">About WM PHARMA</div><h2>Clear information. Thoughtful care.</h2><p>WM PHARMA brings together a range of skincare and personal-care products. Add your verified company story, manufacturing or distribution details, quality standards and relevant regulatory information here before publishing.</p></div></section>
+<section class="promise-grid" aria-label="Customer information">
+  <div class="promise"><div class="promise-icon">✧</div><h3>Product information</h3><p>Check the packaging and verified product details before use.</p></div>
+  <div class="promise"><div class="promise-icon">♡</div><h3>Customer support</h3><p>Contact our team about products, orders and availability.</p></div>
+  <div class="promise"><div class="promise-icon">✓</div><h3>Order confirmation</h3><p>Confirm current price, delivery charges and availability before payment.</p></div>
+</section>
+<section class="section contact" id="contact"><div class="eyebrow">We're here to help</div><h2>Questions or ready to order?</h2><p>Contact us on WhatsApp for product details, current prices and availability.</p><a class="btn" id="contactWhatsapp" href="#contact">CHAT ON WHATSAPP ↗</a></section>
+</main>
+<footer><div class="footer-inner"><div><div class="footer-brand">WM PHARMA</div><div class="footer-note">Skincare & personal care. Product packaging illustrations are placeholders. Company details, product labels and policies require confirmation before launch.</div></div><div class="copyright">© <span id="year"></span> WM PHARMA. All rights reserved.</div></div></footer>
+<a class="whatsapp" id="floatingWhatsapp" href="#contact" aria-label="Contact WM PHARMA on WhatsApp">WhatsApp ↗</a>
+<script>
+/* Add the business WhatsApp number in international format, digits only.
+   Pakistan example: 923001234567 (without +, spaces, or dashes). */
+const WHATSAPP_NUMBER = "923361343051";
+function waLink(message){return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message)}
+const configured = /^\d{10,15}$/.test(WHATSAPP_NUMBER);
+document.querySelectorAll("[data-product]").forEach(el=>{
+  if(configured){el.href=waLink("Hi WM PHARMA, I'd like to enquire about "+el.dataset.product+". Please confirm current price and availability.");}
+  else {el.href="#contact";el.addEventListener("click",e=>{e.preventDefault();document.getElementById("contact").scrollIntoView({behavior:"smooth"});});}
+});
+const contact=document.getElementById("contactWhatsapp"), floating=document.getElementById("floatingWhatsapp");
+if(configured){contact.href=waLink("Hi WM PHARMA, I'd like to know more about your products.");contact.textContent="CHAT ON WHATSAPP ↗";floating.href=waLink("Hi WM PHARMA, I'd like to know more about your products.");floating.textContent="WhatsApp ↗";}
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
